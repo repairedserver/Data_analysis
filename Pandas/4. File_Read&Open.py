@@ -13,4 +13,12 @@ data = {
 df = pd.DataFrame(data)
 df.index.name = '번호번호'
 
-df.to_csv('people.csv')
+#df.to_csv('people.csv', encoding='utf-8-sig')
+df.to_csv('people.csv', encoding='utf-8-sig', index=False)
+
+df.to_csv('people.txt', sep='\t') # tab으로 구분된 텍스트
+
+# df1 = pd.read_csv('people.csv', skiprows=[1, 3, 4]) # skiprows : 무시하고 싶은 줄
+# df1 = pd.read_csv('people.csv', nrows=4) # nrows : 가져오고 싶은 줄
+df1 = pd.read_csv('people.csv', skiprows=2, nrows=4) # 처음 2줄 무시 후 그다음 4줄을 가져옴
+print(df1)
