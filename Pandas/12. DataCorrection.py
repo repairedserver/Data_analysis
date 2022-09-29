@@ -14,3 +14,24 @@ df['결과'] = 'Fall'
 df.loc[df['총합점수'] > 400, '결과'] = 'Pass'
 
 print(df)
+
+# Column 제거
+df = df.drop(columns=['총합점수'])
+print(df)
+
+# Row 삭제
+df = df.drop(index=4) # 4번째 인덱스에 있는 학생 정보 삭제
+print(df)
+
+# Row 추가
+df.loc[6] = ['조', '대마고등학교', '180', '90', '90', '95', '100', '0', 'Pass']
+print(df)
+
+# Cell 수정
+df.loc[3, '키'] = '185'
+print(df)
+
+# Column 순서 변경
+col = list(df.columns)
+df = df[[col[-1]] + col[0:-1]] # 맨 뒤에 있는 column을 앞으로 가져오고 전부 뒤로 땡김
+print(df)
