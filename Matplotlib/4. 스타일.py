@@ -19,3 +19,24 @@ y = [2, 4, 8]
 
 # plt.plot(x, y, marker='o', markersize=15, markeredgecolor='red', markerfacecolor='yellow')
 # plt.show()
+
+# 선 스타일
+# plt.plot(x, y, linestyle='--')
+# plt.show()
+
+# plt.plot(x, y, linestyle='-.')
+# plt.show()
+
+# 선 색
+plt.plot(x, y, color='pink')
+plt.show()
+
+plt.plot(x, y, color='#ff0000')
+plt.show()
+
+# 포맷
+plt.plot(x, y, 'rv-.')
+plt.show()
+
+plt.plot(x, y, 'go')
+plt.show()
