@@ -28,15 +28,19 @@ y = [2, 4, 8]
 # plt.show()
 
 # 선 색
-plt.plot(x, y, color='pink')
-plt.show()
+# plt.plot(x, y, color='pink')
+# plt.show()
 
-plt.plot(x, y, color='#ff0000')
-plt.show()
+# plt.plot(x, y, color='#ff0000')
+# plt.show()
 
 # 포맷
 plt.plot(x, y, 'rv-.')
 plt.show()
 
 plt.plot(x, y, 'go')
+plt.show()
+
+# 축약어
+plt.plot(x, y, marker='o', mfc='red', ms=10, mec='b', ls='-.')
 plt.show()
