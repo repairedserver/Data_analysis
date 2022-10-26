@@ -6,3 +6,4 @@ mat.rcParams['axes.unicode_minus'] = False
 x = [1, 2, 3]
 y = [2, 4, 8]
 plt.plot(x, y)
+plt.savefig('graph', dpi=200)
