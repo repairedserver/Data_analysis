@@ -8,7 +8,7 @@ y = [2, 4, 8]
 plt.plot(x, y, marker='o')
 
 for idx, txt in enumerate(y):
-    plt.text(x[idx] - 0.05, y[idx] + 0.3, txt)
+    plt.text(x[idx], y[idx] + 0.2, txt, ha='center', color='blue')
 
 plt.show()
 
