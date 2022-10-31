@@ -10,3 +10,10 @@ y = [2, 4, 8]
 days = [1, 2, 3]
 az = [2, 6, 10]
 pfizer = [5, 1, 3]
+moderna = [1, 2, 5]
+
+plt.plot(days, az, label='az')
+plt.plot(days, pfizer, label='pfizer', marker='o')
+plt.plot(days, moderna, label='moderna', marker='s')
+plt.legend(ncol=3)
+plt.show()
